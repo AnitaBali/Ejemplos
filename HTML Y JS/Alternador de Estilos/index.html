@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 5</title>
+    <style>
+        /* Clase base, siempre aplicada */
+        .caja-base {
+            width: 150px;
+            height: 150px;
+            background-color: rgb(227, 164, 164);
+            border: 3px solid rgb(219, 50, 50);
+            margin: 20px;
+            transition: all 0.4s ease; /* Transición suave */
+            text-align: center;
+            line-height: 150px;
+            font-size: 1.2em;
+        }
+
+        /* CLASE ACTIVA: Esta se añade/quita con JavaScript */
+        .activo {
+            background-color: #bad9c7; /* Verde brillante */
+            border-color: #27ae60;
+            color: white;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div id="miCaja" class="caja-base">Estado: OFF</div>
+    
+    <button id="btnAlternar">Activar / Desactivar</button>
+    
+    <script src="/HTML Y JS/Alternador de Estilos/js.js"></script>
+</body>
+</html>
