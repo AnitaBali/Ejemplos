@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retraso y Escondite</title>
+
+    <style>
+        #alerta {
+            background-color: #f464ac;
+            border: 1px solid #000000;
+            color: #333;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: opacity 0.5s; /* Para un efecto de desvanecimiento más suave */
+        }
+
+    </style>
+</head>
+<body>
+    
+<!--
+Ejercicio 7: Retraso y Escondite de Elemento
+Objetivo: Crear un elemento que se oculte automáticamente después de unos segundos, 
+y luego añadir un botón que permita cancelar ese ocultamiento automático, 
+practicando el uso de setTimeout y clearTimeout.
+
+Tarea a realizar:
+- Crea un <div> de "Alerta" visible y un botón "Cancelar" en el HTML.
+- En JavaScript, usa setTimeout para programar el ocultamiento del <div> 
+    después de 3 segundos. Guarda la ID que devuelve setTimeout.
+- Asigna un event listener al botón "Cancelar" que use clearTimeout con la 
+ID guardada para detener la acción.
+-->
+
+
+
+<h2>Alerta con Control de Tiempo</h2>
+    
+    <div id="alerta">¡Esta alerta se ocultará en 3 segundos!</div>
+    
+    <button id="btnCancelar">Cancelar Ocultamiento</button>
+    
+    <script src="/HTML Y JS/7. Retraso y Escondite de Elemento/js.js"></script>
+
+
+
+</body>
+</html>
