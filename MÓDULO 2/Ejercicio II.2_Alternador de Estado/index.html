@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <style>
+        .on { background-color: #c166e8; color: white; }
+        .off { background-color: rgb(147, 82, 145); color: black; }
+    </style>
+</head>
+<body>
+
+    
+    
+    <!--Ejercicio II.3: Alternador de Estado (ON/OFF)
+    Objetivo: Crear un interruptor digital que alterna entre dos estados predefinidos ("ON" y "OFF")
+    con cada clic. Esto practica el uso de la variable de estado junto con una sentencia 
+    condicional (if/else) dentro de la función del evento.
+
+    Concepto Clave: Condicionales en Eventos
+    En lugar de simplemente contar (conteo++), usaremos una variable booleana 
+    (true/false) para verificar el estado actual y decidir la siguiente acción.
+
+    Tarea a realizar:
+    1. Declara una variable let estado = false; (false = OFF).
+
+    2. Crea un <div> que muestre el estado actual (OFF).
+
+    3. Crea un botón.
+
+    4. Al hacer clic, la función debe:
+
+    5. Verificar el valor de estado con un if/else.
+
+        - Si es false (OFF), cambiarlo a true (ON) y actualizar el <div>.
+
+        - Si es true (ON), cambiarlo a false (OFF) y actualizar el <div>.-->
+
+     <h1>Ejercicio 2:  Alternador de Estado (ON/OFF)</h1>
+
+     <div id="contenedor" class="off" style="width: 150px; 
+                                 height: 150px;                         
+                                 text-align: center;
+                                 line-height: 150px;"> 
+    ESTADO: OFF
+    </div>
+
+    <br>
+
+    <button id="boton">Cambiar Estado</button>
+
+    <script src="js.js"></script>
+
+</body>
+</html>
