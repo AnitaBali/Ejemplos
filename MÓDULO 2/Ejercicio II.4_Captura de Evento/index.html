@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    Ejercicio II.4: Captura de Evento (event.target)
+    Objetivo: Este ejercicio es crucial para el desarrollo web avanzado. 
+    Aprenderás a usar una sola función para manejar los clics en múltiples elementos 
+    y a identificar cuál de ellos fue pulsado, utilizando la propiedad event.target.
+
+    Concepto Clave: El Objeto event 🎯
+    Cuando un listener se dispara, automáticamente pasa un objeto (que llamaremos e o event) 
+    a la función. Este objeto contiene toda la información sobre lo que acaba de suceder.
+
+    e.target: Es la propiedad que apunta directamente al elemento del DOM que disparó el evento.
+
+    Tarea a realizar:
+        1.Crea un contenedor (<div>) con tres botones dentro.
+        2.A cada botón, asígnale un atributo data-info con un texto descriptivo diferente 
+        (esto es opcional, pero buena práctica).
+        3.Asigna un solo event listener al contenedor padre (<div>).
+    La función (manejarClic) debe usar e.target.textContent para leer el texto del 
+    botón pulsado y mostrarlo en un párrafo de salida.-->
+        
+    <div id="contenedor">
+        <button class="boton" data-info="boton1">Boton 1</button>
+        <button class="boton" data-info="boton2">Boton 2</button>
+        <button class="boton" data-info="boton3">Boton 3</button>
+    </div>        
+
+    <p id="salida"></p>
+
+    <script src="js.js"></script>
+
+</body>
+</html>
